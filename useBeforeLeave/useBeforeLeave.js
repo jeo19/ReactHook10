@@ -10,7 +10,7 @@ const useBeforeLeave = (onBefore) => {
     }
   };
   useEffect(() => {
-    document.addEventListener('mouseleave', handle);
+    document.querySelector('html').addEventListener('mouseleave', handle);
     return () => document.removeEventListener('mouseleave', handle);
   }, []);
 };

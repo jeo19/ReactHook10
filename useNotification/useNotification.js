@@ -21,6 +21,7 @@ const useNotification = (title, options) => {
 export default function App() {
   const triggerNotification = useNotification(
     "Why Notification doesn't it work?",
+    { body: 'They are afflict me' },
   );
   return (
     <div className="App" style={{ height: '1000vh' }}>
